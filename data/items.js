@@ -21,7 +21,7 @@ const items = [
     },
     {
         title: "Pollux",
-        def: "A swift wind-element fighter known for exceptional speed and agility.",
+        def: "The Apostle of the Lightbearer, scion of the White Night, One who Dispels Darkness, Divus of the Divine Heart—I, Pollux, have answered your call.",
         img: "https://i.redd.it/xdya1u95ihvf1.jpeg"
     }
 ];
@@ -29,7 +29,7 @@ const items = [
 const app = Vue.createApp({
   data() {
     return {
-      items: items,       // from items.js
+      items: items,
       currentIndex: 0,
       showDef: false
     };
@@ -48,4 +48,5 @@ const app = Vue.createApp({
     }
   }
 });
+
 app.mount('#app');

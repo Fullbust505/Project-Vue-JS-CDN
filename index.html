@@ -8,10 +8,11 @@
 
     <body>
         <div id="app">
-            <div id="character-box">
-                <h1>{{items[currentIndex].title}}</h1>
-                <p>{{items[currentIndex].def}}</p>
+            <div id="characters-box">
+                <h1 v-if="!showDef">{{items[currentIndex].title}}</h1>
+                <p v-if="showDef">{{items[currentIndex].def}}</p>
                 <img :src="items[currentIndex].img" :alt="'The illustration of the character ${items[currentIndex].title}'" width=55%>
+                <button @click="toggleView()">Toggle Title /Definition</button>
             </div>
             
             <div id="buttons-box">
