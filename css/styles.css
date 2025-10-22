@@ -1,0 +1,46 @@
+body{
+    background-image: url("../data/img/black_pool.png");
+    background-size: 1600px;
+    background-attachment: fixed;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(224, 224, 224);
+}
+
+
+#app{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    font-family: inherit;
+}
+
+#buttons-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin: 20px;
+    width: 400px;
+}
+
+button{
+    background-color: rgba(63, 73, 75);
+
+    width: 100px;
+
+    border: ridge 5px rgba(199, 199, 186);
+    border-radius: 6px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(224, 224, 224);
+
+}

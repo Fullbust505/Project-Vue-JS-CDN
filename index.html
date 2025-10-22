@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Morimens Character Caroussel</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="character-box">
+                <h1>{{items[currentIndex].title}}</h1>
+                <p>{{items[currentIndex].def}}</p>
+                <img :src="items[currentIndex].img" :alt="'The illustration of the character ${items[currentIndex].title}'" width=55%>
+            </div>
+            
+            <div id="buttons-box">
+                <button @click="prevItem()">Previous Character</button>
+                <button @click="nextItem()">Next Character</button>
+            </div>        
+        </div>
+    
+
+        
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./data/items.js"></script>
+    </body>
+</html>
