@@ -44,7 +44,10 @@ const app = Vue.createApp({
     },
     prevItem() {
         this.currentIndex--;
-        this.currentIndex = this.currentIndex%items.length;
+        if (this.currentIndex < 0){
+            this.currentIndex += items.length;      // For some reason, modulo doesn't work for negative numbers ????
+        }
+        console.log(this.currentIndex);
     }
   }
 });
